@@ -1,4 +1,4 @@
-var eventDate = new Date("Aug 28, 2021 16:09:00");
+var eventDate = new Date("Aug 29, 2021 16:09:00");
 var countDownDate=eventDate.getTime();
 i = 0;
 var x = setInterval(function () {
