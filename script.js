@@ -1,4 +1,4 @@
-var eventDate = new Date("Aug 29, 2021 16:09:00");
+var eventDate = new Date("Aug 26, 2021 16:09:00");
 var countDownDate=eventDate.getTime();
 i = 0;
 var x = setInterval(function () {
@@ -17,6 +17,10 @@ var x = setInterval(function () {
   if (distance <= 0) {
     clearInterval(x);
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("flip-counter").style.backgroundColor =  "#ecd7ed12";
+    document.getElementById("flip-counter").style.color =  "white";
+    document.getElementById("flip-counter").style.fontSize="3rem";
+    document.getElementById("flip-counter").style.boxShadow = "20px 20px 13px 6px #00000057";
     document.getElementById("flip-counter").innerText = "The Event started on "+eventDate.toLocaleDateString("hi-IN",options);
     console.log(document.getElementById("flip-counter"));
   }
